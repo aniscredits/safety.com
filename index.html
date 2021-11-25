@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>testing the javascrpit c:</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div>
+            <header>
+                <a href="sections/sign in page.html" target="_blank" class="Signin">Sign in</a>
+                     <ul>
+                                 <li><a href="#" class="active">Home</a></li>
+                                 <li><a href="sections/Support.html" target="_blank">Support</a></li>
+                                 <li><a href="https://discord.gg/jpaTaX9azn" target="_blank">Discord</a></li>
+                                 <li><a href="sections/Download.html" target="_blank">Download</a></li>
+                     </ul>
+           
+
+             </header>
+         </div>
+         
+     <section>
+        <h2 id="text">Safety</h2>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <img src="mountains_front.png" id="mountains_fornt">
+        
+        <a href="#sec" id="btn">Learn More</a>
+    </section>
+    <div class="sec" id="sec">
+        <h2>Website Test</h2>
+        <p>Safety is a simple discord server that servs the memebers and idk what to write because this is just a test. so hi, how are u? are u doing good? nah? just like me! ok do u want to play fortnite? i mean mincreaft? you know what, stfu plz i have no idea what to write so i am just saying random things like hello, u good, stfu, valorant is better than fortninte suiiiiiii<br><br>Yooo this is a second paragraph that i am writing.
+            i dont want to stfu because if i did i will be sad for ever and ever so i wont stfu soo what are u doing  good? i am just chilling out and the proof is that i am writing this shitty paragraph because i want my website to look good not bad asf so yea byebye.(Suiiiiiiiiiiii)</p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_fornt = document.getElementById('mountains_front');
+        let header = document.querySelector('header ')
+        window.addEventListener ('scroll',function(){
+            let value   = window.scrollY;
+            stars.style.left    = value * 0.25 + 'px';
+            moon.style.top    = value * 1.05 + 'px';
+            mountains_behind.style.top    = value * 0.5 + 'px';
+            mountains_fornt.style.top    = value * 0 + 'px';
+            text.style.right    = value * 4 + 'px';
+            btn.style.top    = value * 1.5 + 'px';
+            header.style.top    =value * 1.5+ 'px';
+
+
+
+        })
+    </script>
+    
+    </body>
+</html>
